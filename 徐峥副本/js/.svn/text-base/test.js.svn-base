@@ -1,0 +1,127 @@
+
+//点击音乐停止
+function musicFun(){
+	var isOn = true;
+	$("#img_one_music").on("click",function(){
+		if(isOn){
+			$(this).children().attr("src","img/off.png");
+			music.pause();
+			isOn = false;
+		}else{
+			$(this).children().attr("src","img/jian.png");;
+				music.play();
+				isOn = true;
+			}
+	})
+		
+		
+}
+musicFun();
+
+
+//所有图片加载完弹出下一页面
+//setTimeout(function(){
+//	$(".load").css("display","none");
+//},2000)
+
+
+//文字一条条出现
+function textBlock(){
+	
+	var ps = $(".Ps p");
+	var i = -1;
+	var timer = setInterval(function(){
+		i++;
+		$(ps).eq(i).css("display","block");
+		if(i == 7){
+
+			$(".img_two_sanguang").css("animation","moveQiu2 5s linear");
+			$(".img_two_qiu2").css("animation","moveQiu2 6s linear infinite");
+		}
+		if(i >= ps.length+2){
+			clearInterval(timer);
+			$(".Ps").fadeOut("slow");
+			$(".img_two_sanguang").animate({
+				left:"66%",
+				top:"28%"
+			},1000,function(){
+				$(this).animate({
+					top:"29%"
+				},2000)
+			
+			})
+			moveFun();
+		}
+	},1000)
+}
+textBlock();
+
+
+
+//给徐峥飞行更换衣服
+function moveFun(){
+	$(".flyPeople").css({
+		animation: "flyP 4s linear",
+		display:"block",
+	})
+	$(".img_three_qiu3").animate({
+		left:"25%"
+	},1500,function(){
+		$(this).animate({
+			top:"79%"
+		},3000,function(){
+			//手机旋转出先
+			$(".img_four_phone").css("animation","Phone 1s linear").fadeIn(2500).delay(1000).animate({
+				opacity: 0
+			},500,function(){
+				shardFun();
+				
+				
+			});
+			$(".shardPhone").delay(2000).fadeIn(500);
+			//让所有星球渐渐消失
+			$(".img_three_qiu3").add(".img_two_sanguang").add(".img_two_qiu2").add(".img_two_qiu").delay(1000).fadeOut("slow");
+			
+		})
+	})
+	var count = 0;
+	var i = 0;
+	var array = ["img/sanxing.png","img/sijiao.png","img/wen.png"];
+	var timer2 = setInterval(function(){
+		count++;
+		i++
+		if(count == 3){
+			count = 0;
+		}
+		if(i == 8){
+			clearInterval(timer2);
+			$(".flyPeople").css("display","none");
+		}
+		$(".img_three_sijiao").attr("src",array[count]);
+	},500)
+	
+}
+
+//手机破碎，徐峥散落到各个星球
+function shardFun(){
+	$(".shard_phone_1").css("animation","shard_phone_1 3s");
+	$(".shard_phone_2").css("animation","shard_phone_2 3s");
+	$(".shard_phone_3").css("animation","shard_phone_3 3s");
+	$(".shard_phone_4").css("animation","shard_phone_4 3s");
+	$(".shard_phone_5").css("animation","shard_phone_5 3s");
+	$(".shard_phone_6").css("animation","shard_phone_6 3s");
+	$(".shard_phone_7").css("animation","shard_phone_7 3s");
+	$(".shard_phone_8").css("animation","shard_phone_8 3s");
+	//碎片爆裂，星球渐现
+	$(".stars").fadeIn(1000);
+	
+	//定时器
+	setTimeout(function(){
+		$(".shardPhone").css("display","none");
+		$(".footerText").css("animation","textMove 2s infinite")
+	},3000)
+	
+	
+}
+
+

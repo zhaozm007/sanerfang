@@ -1,0 +1,530 @@
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td
+{margin: 0; padding: 0; border: 0; outline: none;}
+body{line-height: 1;font-size: 88% /* Decide for yourself if you want to include this. */;}
+h1, h2, h3, h4, h5, h6{font-size: 100%;padding: .6em 0;margin: 0 15px;}
+ul, ol{list-style: none;}
+a{color: black;text-decoration: none;}
+a:hover
+{text-decoration: underline;}
+.floatLeft{float: left;padding: .5em .5em .5em 0;}
+.floatRight{float: right;padding: .5em 0 .5em .5em;}
+
+
+		/*第一部分*/
+.box{position: relative;}
+.bg{background: url(../img/Z.jpg) no-repeat; width: 100%; height: 100%; background-size: 100% 100%;}
+.img_one_yuanhuan{width: 100%; margin-top: 40%;}
+.img_one_touxiang{position: absolute; top: 33.7%; left: 26.3%; width: 45%;}
+
+.img_one_ziti{position: absolute; top: 30%; width: 60%; left: 19%;
+-webkit-animation: wenzi 8s linear infinite;
+-moz-animation: wenzi 8s linear infinite;
+-o-animation: wenzi 8s linear infinite;
+animation: wenzi 8s linear infinite;
+/*transform-origin: 50% 50%;*/
+}
+@keyframes wenzi{
+	from{
+		-webkit-transform: rotateZ(0deg);
+		-moz-transform: rotateZ(0deg);
+		-ms-transform: rotateZ(0deg);
+		-o-transform: rotateZ(0deg);
+		transform: rotateZ(0deg);
+	}
+	to{
+		-webkit-transform: rotateZ(-360deg);
+		-moz-transform: rotateZ(-360deg);
+		-ms-transform: rotateZ(-360deg);
+		-o-transform: rotateZ(-360deg);
+		transform: rotateZ(-360deg);
+	}
+}
+
+.img_one_sanjiaoxing{position: absolute; top: 19%; left: 10%; width: 9%;}
+.img_one_duojiao{position: absolute; left: 84%; width: 8%; top: 29%; transform: rotateZ(300deg);}
+#img_one_music img{position: absolute; width: 10%; top: 2%; left: 3%;}
+
+
+/*.load{display: none;}*/
+.text{overflow: hidden;}
+
+
+		/*第二部分*/
+		
+.img_two_sanguang{position:absolute; top: 20.4%; left: 20%; width: 16%;
+	
+}
+
+.img_two_qiu2{position:absolute; top: 22.5%; left: 70%; width: 12%;
+	
+}
+
+.img_two_qiu{position:absolute; top: 80.3%; left: 50%; width: 8%;}
+.Ps{text-align: center; margin: 49% 0 auto;}
+.Ps p{color: white; font-size: 0.8rem; margin-top: 3%; display: none;}
+@keyframes moveQiu2{
+	0%{
+		-webkit-transform: translateY(0px) translateX(0px);
+		-moz-transform: translateY(0px) translateX(0px);
+		-ms-transform: translateY(0px) translateX(0px);
+		-o-transform: translateY(0px) translateX(0px);
+		transform: translateY(0px) translateX(0px);
+		
+	}
+	50%{
+		-webkit-transform: translateY(10px) translateX(5px);
+		-moz-transform: translateY(10px) translateX(5px);
+		-ms-transform: translateY(10px) translateX(5px);
+		-o-transform: translateY(10px) translateX(5px);
+		transform: translateY(10px) translateX(5px);
+		
+	}
+	100%{
+		-webkit-transform: translateY(0px) translateX(0px);
+		-moz-transform: translateY(0px) translateX(0px);
+		-ms-transform: translateY(0px) translateX(0px);
+		-o-transform: translateY(0px) translateX(0px);
+		transform: translateY(0px) translateX(0px);
+		
+	}
+}
+
+
+
+
+		/*第三部分*/
+
+.flyPeople{position: relative; width: 70%; height: 50%; right: -100%;}
+.img_three_sijiao{position: absolute; width: 110%; top: 50%; left: 30%;}
+.img_three_tou3{position: absolute; width: 28%; left: 61%; top: 51%;}
+.img_three_yanjing{position: absolute; width: 26%; left: 60.5%; top: 63.5%;}
+.img_three_qiu3{position: absolute; top: 80%; width: 23%; left: -20%;}
+@keyframes flyP{
+
+	0% {
+	    right: -100%;
+	    top: 28%;
+	}
+	30% {
+	    right: 0%;
+	    top: 8%;
+	}
+	
+	70% {
+	    right: 0%;
+	    top: 8%;
+	}
+	100% {
+	    right: 114%;
+	    top: -8%;
+	}
+}
+
+
+		/*第四部分*/
+.phone{position: relative; position: absolute; top: 22%; left: 31%; width: 40%;}
+/*.shardPhone{position: relative; position: absolute; top: 0%; left: 0%; width: 100%;}*/
+.img_four_phone{width: 100%; height: 100%; transform-origin: 50% 50%; display: none;}
+@-webkit-keyframes Phone{
+	from{
+		
+		transform: rotate(0deg) scale(0);
+	}
+	to{
+		
+		/*width: 100%;*/
+		transform: rotate(360deg) scale(1);
+	}
+}
+/*.shardPhone{position: absolute; top: 22%; left: 26%;}*/
+.shard_phone_1{position: absolute; top: -1.8%; left: -3.9%; width: 72%;}
+.shard_phone_2{position: absolute; top: -1.8%; left: 38.1%; width: 66%;}
+.shard_phone_3{position: absolute; top: 62.4%; left: -3.9%; width: 63.5%;}
+.shard_phone_4{position: absolute; top: 73.1%; left: 26.6%; width: 76.3%;}
+.shard_phone_5{position: absolute; top: 23.9%; left: -3.3%; width: 62.2%;}
+.shard_phone_6{position: absolute; top: 24.2%; left: 28%; width: 58%;}
+.shard_phone_7{position: absolute; top: 11.1%; left: 26.6%; width: 78%;}
+.shard_phone_8{position: absolute; top: 44%; left: 46%; width: 58.7%;}
+.shardPhone{display: none;}
+
+@keyframes shard_phone_1{
+	0%{}
+	5%{
+		left: -20%;
+		top: -25%;
+		width: 45%;
+		transform: rotateZ(-45deg);
+		background: url(../img/tou3.png) no-repeat;
+		background-size: 40%;
+		background-position-x: 30%;
+		background-position-y: 30%;
+	}
+	60%{
+		left: -20%;
+		top: -25%;
+		width: 45%;
+		transform: rotateZ(-45deg);
+		background: url(../img/tou3.png) no-repeat;
+		background-size: 40%;
+		background-position-x: 30%;
+		background-position-y: 30%;
+	}
+	100%{
+		top: -30%;
+		left: 55%;
+		width: 1%;
+	}
+}
+@keyframes shard_phone_2{
+	0%{}
+	5%{
+		left: 85%;
+		top: -35%;
+		width: 55%;
+		transform: rotateZ(60deg);
+		background: url(../img/tou3.png) no-repeat;
+		background-size: 40%;
+		background-position-x: 80%;
+		background-position-y: 30%;
+	}
+	60%{
+		left: 85%;
+		top: -35%;
+		width: 55%;
+		transform: rotateZ(60deg);
+		background: url(../img/tou3.png) no-repeat;
+		background-size: 40%;
+		background-position-x: 80%;
+		background-position-y: 30%;
+	}
+	100%{
+		top: 0%;
+		left: 140%;
+		width: 1%;
+	}
+}
+@keyframes shard_phone_3{
+	0%{}
+	5%{
+		left: -40%;
+		top: 85%;
+		width: 45%;
+		background: url(../img/tou3.png) no-repeat;
+		background-size: 40%;
+		background-position-x: 40%;
+		background-position-y: 60%;
+	}
+	60%{
+		left: -40%;
+		top: 85%;
+		width: 45%;
+		background: url(../img/tou3.png) no-repeat;
+		background-size: 40%;
+		background-position-x: 40%;
+		background-position-y: 60%;
+	}
+	100%{
+		top: 110%;
+		left: 20%;
+		width: 1%;
+	}
+}
+@keyframes shard_phone_4{
+	0%{}
+	5%{
+		left: 70%;
+		top: 95%;
+		width: 65%;
+		background: url(../img/tou3.png) no-repeat;
+		background-size: 30%;
+		background-position-x: 50%;
+		background-position-y: 60%;
+	}
+	60%{
+		left: 70%;
+		top: 95%;
+		width: 65%;
+		background: url(../img/tou3.png) no-repeat;
+		background-size: 30%;
+		background-position-x: 50%;
+		background-position-y: 60%;
+	}
+	100%{
+		top: 130%;
+		left: 100%;
+		width: 1%;
+	}
+}
+@keyframes shard_phone_5{
+	0%{}
+	5%{
+		left: -45%;
+		top: 25%;
+		width: 45%;
+		transform: rotateZ(60deg); 
+		background: url(../img/tou3.png) no-repeat;
+		background-size: 45%;
+		background-position-x: 40%;
+		background-position-y: 55%;
+	}
+	60%{
+		left: -45%;
+		top: 25%;
+		width: 45%;
+		transform: rotateZ(60deg);
+		background: url(../img/tou3.png) no-repeat;
+		background-size: 45%;
+		background-position-x: 40%;
+		background-position-y: 55%;
+	}
+	100%{
+		top: 0%;
+		left: -40%;
+		width: 1%;
+	}
+}
+@keyframes shard_phone_6{
+	0%{}
+	5%{
+		left: 28%;
+		top: 30%;
+		width: 40%;
+		background: url(../img/tou3.png) no-repeat;
+		background-size: 35%;
+		background-position-x: 55%;
+		background-position-y: 55%;
+	}
+	60%{
+		left: 28%;
+		top: 30%;
+		width: 40%;
+		background: url(../img/tou3.png) no-repeat;
+		background-size: 35%;
+		background-position-x: 55%;
+		background-position-y: 55%;
+	}
+	100%{
+		top: 55%;
+		left: 0%;
+		width: 1%;
+	}
+}
+@keyframes shard_phone_7{
+	0%{}
+	5%{
+		left: 45%;
+		top: -10%;
+		width: 40%;
+		background: url(../img/tou3.png) no-repeat;
+		background-size: 30% 30%;
+		background-position-x: 65%;
+		background-position-y: 55%;
+		
+	}
+	60%{
+		left: 45%;
+		top: -10%;
+		width: 40%;
+		background: url(../img/tou3.png) no-repeat;
+		background-size: 30% 30%;
+		background-position-x: 65%;
+		background-position-y: 55%;
+	}
+	100%{
+		top: 15%;
+		left: 20%;
+		width: 1%;
+	}
+}
+@keyframes shard_phone_8{
+	0%{}
+	5%{
+		left: 95%;
+		top: 20%;
+		width: 60%;
+		background: url(../img/tou3.png) no-repeat;
+		background-size: 50% 50%;
+		background-position-x: 70%;
+		background-position-y: 60%;
+	}
+	60%{
+		left: 95%;
+		top: 20%;
+		width: 60%;
+		background: url(../img/tou3.png) no-repeat;
+		background-size: 50% 50%;
+		background-position-x: 70%;
+		background-position-y: 60%;
+	}
+	100%{
+		top: 75%;
+		left: 90%;
+		width: 1%;
+	}
+}
+
+
+
+
+
+            			/*第五部分*/
+.stars{position: relative; width: 100%; height: 100%; display: block;}
+.img_stars_1{position: absolute; top: 17%; left: 3%; width: 28%; animation: starsMove-1 4s linear infinite;}
+.img_stars_2{position: absolute; top: 4%; left: 45%; width: 18%; animation: starsMove-2 3s linear infinite;}
+.img_stars_3{position: absolute; top: 22%; left: 37%; width: 14%; animation: starsMove-3 5s linear infinite;}
+.img_stars_4{position: absolute; top: 18%; left: 79%; width: 18%; animation: starsMove-4 4s linear infinite;}
+.img_stars_5{position: absolute; top: 42%; left: 22%; width: 21%; animation: starsMove-5 5s linear infinite;}
+.img_stars_6{position: absolute; top: 49%; left: 53%; width: 24%; animation: starsMove-6 3s linear infinite;}
+.img_stars_7{position: absolute; top: 66%; left: 29%; width: 24%; animation: starsMove-7 4s linear infinite;}
+.img_stars_8{position: absolute; top: 74%; left: 60%; width: 30%; animation: starsMove-8 3s linear infinite;}
+.footerText{position: absolute; bottom: 1%; left: 39%; text-align: center;}
+.footerText p{color: white; font-size: 0.5rem; margin-bottom: 2px;}
+
+.landing{position: absolute; top: 40%; left: 41%; display: none;}
+.landing p{color: white;}
+
+@keyframes starsMove-1{
+	0%{
+		top: 17%;
+	}
+	50%{
+		top: 19%;
+	}
+	100%{
+		top: 17%;
+	}
+}
+@keyframes starsMove-2{
+	0%{
+		top: 4%;
+	}
+	50%{
+		top: 6%;
+	}
+	100%{
+		top: 4%;
+	}
+}
+@keyframes starsMove-3{
+	0%{
+		top: 22%;
+	}
+	50%{
+		top: 24%;
+	}
+	100%{
+		top: 22%;
+	}
+}
+@keyframes starsMove-4{
+	0%{
+		top: 18%;
+	}
+	50%{
+		top: 20%;
+	}
+	100%{
+		top: 18%;
+	}
+}
+@keyframes starsMove-5{
+	0%{
+		top: 42%;
+	}
+	50%{
+		top: 44%;
+	}
+	100%{
+		top: 42%;
+	}
+}
+@keyframes starsMove-6{
+	0%{
+		top: 49%;
+	}
+	50%{
+		top: 50%;
+	}
+	100%{
+		top: 49%;
+	}
+}
+@keyframes starsMove-7{
+	0%{
+		top: 66%;
+	}
+	50%{
+		top: 68%;
+	}
+	100%{
+		top: 66%;
+	}
+}
+@keyframes starsMove-8{
+	0%{
+		top: 74%;
+	}
+	50%{
+		top: 75%;
+	}
+	100%{
+		top: 74%;
+	}
+}
+
+@keyframes textMove{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+
+			/*第六部分*/
+.gameBg{position: relative; text-align: center; overflow: hidden; background: url(../img/bg.jpg) no-repeat; width: 100%; height: 100%; background-size: 100% 100%; display: block;}
+.gameBg_img_1{position: absolute; top: 6%; left: 80%; width: 11%;}
+.gameBg_img_2{position: absolute; top: 86%; left: 11%; width: 12%;}
+.gameBg_img_3{position: absolute; top: 85%; left: 80%; width: 12%;}
+.gameBg_img_4{width: 100%; margin-top: 8%;}
+.textFirst{margin-top: 16%;}
+.textFirst p{ 
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(255, 255, 255, 1)), to(rgba(95, 95, 95, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.head{position: absolute; top: 23%; left: 5%; width: 90%; height: 49.6%;}
+.head div{position: relative; width: 100%; height: 100%; display: inline-block;}
+.head div img:nth-child(1){width: 100%; height: 100%;}
+.head div img:nth-child(2){position: absolute; top: 7%; left: 17%; width: 65%;}
+
+.time{position: absolute; top: 18.5%; left: 17%; width: 65%;}
+.time p{color: red;}
+
+/*游戏结束*/
+.gameOver{position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; display: none;}
+.black{width: 100%; height: 100%; background: black; opacity: 0.8;}
+.gameOver img{position: absolute; top: 15%; left: 7%; width: 80%; height: 55%;}
+.overText{position: absolute; top: 36%; left: 29%; text-align: center; color: white;}
+.overText p{font-size: 0.5rem; line-height: 20px;}
+.btn{position: absolute; top: 57%; left: 31%; width: 40%; height: 10%; text-align: center;}
+.btn div{width: 90%; height: 20px; color: #54A9C4; border: 1px #54A9C4 solid; font-size: 0.5rem; margin-bottom: 5px; display: inline-block; line-height: 20px; border-radius: 20px;}
+
+/*点击正确*/
+.clickTrue{position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; display: none;}
+.black{width: 100%; height: 100%; background: black; opacity: 0.8;}
+.trueImgBox{position: absolute; top: 21%; left: 15%; width: 73%; height: 49%;}
+.suipian{position: absolute; top: 25%; left: 20%; color: #54A9C4; font-size: 0.7rem;}
+.window{position: relative; position: absolute; top: 33%; left: 33%; width: 37%; height: 20%; overflow: hidden;}
+.trueText{position: absolute; top: 59%; left: 16%; width: 70%; height: 7%;}
+.trueText p{font-size: 0.5rem; color: white; line-height: 20px;}
+#trueShardImg{position: absolute; left: 0%; top: 0%; width: 500%;}
